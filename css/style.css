@@ -112,27 +112,27 @@ section .container::after {
 }
 
 /* aside rules */
-#white .sxaside{
+.white .sxaside{
     width: 70%;
     height: auto;
 }
 
-#white .dxaside {
+.white .dxaside {
     padding-top: 30px;
     width: 30%;
 }
 
-main #grey {
+main .grey {
     background-color: #F7F6F6;
     position: relative;
 }
 
-#grey .sxaside {
+.grey .sxaside {
     padding-top: 30px;
     width: 30%;
 }
 
-#grey .dxaside{
+.grey .dxaside{
     width: 70%;
     height: auto;
 }
