@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -94,17 +94,43 @@ button.jumbo {
     margin-left: 20px;
 }
 
-
 /* main rules */
-
 section {
     height: 100vh;
-    position: relative;
-    /* debug */
-    /* background-color: seagreen; */
+    padding-top: 100px;
 }
 
+/* float rules */
+section aside {
+    float: left;
 }
+
+section .container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* aside rules */
+.white .sxaside{
+    width: 70%;
+    height: auto;
+}
+
+.white .dxaside {
+    padding-top: 30px;
+    width: 30%;
+}
+
+aside h2{
+    font-size: 2.3em;
+    margin-bottom: 20px;    
+}
+
+aside p {
+    font-size: 1.2em;  
+}
+
 /* section .wave{
     position: absolute;
 }
