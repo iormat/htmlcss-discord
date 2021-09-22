@@ -1,0 +1,60 @@
+/* general rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Whitney', Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+/* header rules */
+header {
+    /* debug */
+    background-color: #3E60D7;
+    height: 75vh;
+    width: 100%;
+}
+
+nav {
+    /* debug */
+    background-color: #F2D0B8;
+    width: 90%;
+    margin: 0 auto;
+    height: 20vh;
+}
+
+header div {
+    /* debug */
+    background-color: saddlebrown;
+    width: 60%;
+    margin: 4vh auto;
+    height: 47vh;
+}
+
+/* main rules */
+
+section {
+    height: 100vh;
+    position: relative;
+    /* debug */
+    background-color: seagreen;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    /* debug */
+    background-color: tomato;
+    height: 150px;
+}
+/* section .wave{
+    position: absolute;
+}
+
+section .wave.down {
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+} */
