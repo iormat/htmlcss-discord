@@ -7,31 +7,93 @@
 
 body {
     font-family: 'Whitney', Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
 }
 
 /* header rules */
 header {
-    /* debug */
-    background-color: #3E60D7;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: top;
     height: 75vh;
     width: 100%;
+    position: relative;
 }
 
+header .container img, .login {
+    position: absolute;
+    top: 20px;
+}
+
+header .container .img {
+    left: 7.5%;
+}
+
+/* nav rules */
 nav {
-    /* debug */
-    background-color: #F2D0B8;
-    width: 90%;
-    margin: 0 auto;
-    height: 20vh;
+    text-align: center;
 }
 
-header div {
-    /* debug */
-    background-color: saddlebrown;
-    width: 60%;
-    margin: 4vh auto;
-    height: 47vh;
+li, a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    font-size: .9em;
+    font-weight: bolder;
 }
+
+nav ul li a{
+    color: #fff;
+}
+
+button {
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: #fff;
+}
+
+button.login {
+    right: 7.5%;
+}
+
+/* inside jumbotron rules */
+header .header-text {
+    width: 65%;
+    margin: 4vh auto;
+    text-align: center;
+    color: #fff;
+}
+
+.header-text h1 {
+    font-size: 3em;
+    margin: 90px 0 50px 0;
+}
+
+.header-text p {
+    font-size: 1.1em;
+    margin-bottom: 50px;
+}
+
+button.jumbo {
+    font-size: 1.1em;
+    font-weight: normal;
+    padding: 18px 27px;
+    border-radius: 30px;
+}
+
+.jumbo.open-browser{
+    background-color: #000;
+    color: #fff;
+    margin-left: 20px;
+}
+
 
 /* main rules */
 
@@ -39,15 +101,9 @@ section {
     height: 100vh;
     position: relative;
     /* debug */
-    background-color: seagreen;
+    /* background-color: seagreen; */
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    /* debug */
-    background-color: tomato;
-    height: 150px;
 }
 /* section .wave{
     position: absolute;
@@ -58,3 +114,5 @@ section .wave.down {
     left: 0;
     transform: rotate(180deg);
 } */
+
+
