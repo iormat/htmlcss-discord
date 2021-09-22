@@ -189,6 +189,37 @@ button.download {
  footer {
      background-color: #25272A;
      height: 70vh;
-     
  }
+
+ section.footer {
+     width: 80%;
+     margin: 0 auto;
+ }
+
+ .footer.top {
+     /* debug */
+     height: 50vh;
+     /* background-color: tomato; */
+ }
+
+/* footer bottom */
+ .footer.bottom {
+     height: 20vh;
+     border-top: 1px solid #C9C9C9;
+     position: relative;
+ }
+ .footer.bottom img, .footer.bottom .register {
+     position: absolute;
+ }
+ .footer.bottom img {
+     top: 30px;
+     left: 0;
+ }
+
+ .footer.bottom .register {
+     top: 30px;
+     right: 0;
+     background-color: #93A0DC;
+     color: #fff;
+    }
 
