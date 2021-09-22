@@ -63,10 +63,10 @@ button.login {
     right: 7.5%;
 }
 
-/* inside jumbotron rules */
+/* jumbotron inside rules */
 header .header-text {
     width: 65%;
-    margin: 4vh auto;
+    margin: 30px auto;
     text-align: center;
     color: #fff;
 }
@@ -97,7 +97,7 @@ button.jumbo {
 /* main rules */
 section {
     height: 100vh;
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 /* float rules */
@@ -112,14 +112,29 @@ section .container::after {
 }
 
 /* aside rules */
-.white .sxaside{
+#white .sxaside{
     width: 70%;
     height: auto;
 }
 
-.white .dxaside {
+#white .dxaside {
     padding-top: 30px;
     width: 30%;
+}
+
+main #grey {
+    background-color: #F7F6F6;
+    position: relative;
+}
+
+#grey .sxaside {
+    padding-top: 30px;
+    width: 30%;
+}
+
+#grey .dxaside{
+    width: 70%;
+    height: auto;
 }
 
 aside h2{
@@ -130,15 +145,5 @@ aside h2{
 aside p {
     font-size: 1.2em;  
 }
-
-/* section .wave{
-    position: absolute;
-}
-
-section .wave.down {
-    bottom: 0;
-    left: 0;
-    transform: rotate(180deg);
-} */
 
 
