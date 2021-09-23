@@ -21,6 +21,7 @@ header {
     background-size: cover;
     background-position: top;
     height: 75vh;
+    min-height: 650px;
     width: 100%;
     position: relative;
 }
@@ -39,7 +40,7 @@ nav {
     text-align: center;
 }
 
-li, a {
+header nav li, nav a {
     text-decoration: none;
     display: inline-block;
     padding: 15px;
@@ -87,6 +88,10 @@ button.jumbo, button.download {
     padding: 18px 27px;
     border-radius: 30px;
 }
+.jumbo .button.download{
+    background-color: #fff;
+    color: #000;
+}
 
 .jumbo.open-browser{
     background-color: #000;
@@ -95,7 +100,7 @@ button.jumbo, button.download {
 }
 
 /* main rules */
-section {
+main section {
     height: 100vh;
     padding: 100px 0;
 }
@@ -109,6 +114,16 @@ section .container::after {
     content: '';
     display: table;
     clear: both;
+}
+/* wave rules */
+.wave svg{
+    color: #F7F6F6;
+    display: block;
+    width: 100%;
+}
+
+.wave.down {
+    transform: rotate(180deg);
 }
 
 /* aside rules */
@@ -175,7 +190,7 @@ main .grey:last-child{
     font-size: 2em;
     margin-top: 30px;
 }
-button.download {
+section button.download {
     background-color: #93A0DC;
     color: #fff;
     margin-top: 40px;
@@ -185,10 +200,10 @@ button.download {
  }
 
  /* footer */
-
  footer {
      background-color: #25272A;
      height: 70vh;
+     min-height: 650px;
  }
 
  section.footer {
@@ -196,30 +211,85 @@ button.download {
      margin: 0 auto;
  }
 
- .footer.top {
-     /* debug */
-     height: 50vh;
-     /* background-color: tomato; */
+ /* footer top */
+ .foot.top {
+     margin-bottom: 50px;
+     padding-top: 50px;
  }
 
+ .foot-nav {
+     float: left;
+     width: 17%;
+     text-align: left;
+ }
+
+ .foot-nav.social {
+     width: 32%;
+ }
+
+ .foot.top .container::after {
+     content: '';
+     display: table;
+     clear: both;
+ }
+
+ .foot-nav h4 {
+     color: #7788D4;
+     font-size: 2em;
+ }
+ .foot-nav.social img {
+     width: 10%;
+ }
+
+ .foot-nav.social div {
+     color: #fff;
+     margin: 20px 5px 20px 0;
+ }
+ .foot-nav ul li{
+    color: #fff;
+    font-weight: lighter;
+    display: block;
+    margin: 10px 0;
+}
+
+.foot-nav.social ul li{
+    display: inline-block;
+}
+
+.foot-nav ul li:first-child {
+    color: #7788D4;
+} 
+
+.foot-nav.social a {
+     color: #fff;
+     font-size: 1em;
+     margin-right: 10px;
+    }
+.foot-nav li, li a {
+        padding: 0;
+    }
+
+
 /* footer bottom */
- .footer.bottom {
+.foot.bottom {
+     width: 80%;
+     margin: auto;
      height: 20vh;
      border-top: 1px solid #C9C9C9;
      position: relative;
  }
- .footer.bottom img, .footer.bottom .register {
-     position: absolute;
- }
- .footer.bottom img {
-     top: 30px;
-     left: 0;
- }
+.foot.bottom img, .foot.bottom .register {
+    position: absolute;
+}
+.foot.bottom img {
+    top: 30px;
+    left: 0;
+}
 
- .footer.bottom .register {
-     top: 30px;
-     right: 0;
-     background-color: #93A0DC;
-     color: #fff;
-    }
+.foot.bottom .register {
+    top: 30px;
+    right: 0;
+    background-color: #93A0DC;
+    color: #fff;
+}
 
